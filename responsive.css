@@ -1,0 +1,22 @@
+@media screen and (max-width: 712px) {
+    .box{
+        width: 100%;
+        max-width: 450px;
+    }
+    #input-box{
+        height: auto;
+        min-height: 40px;
+        width: 300px;
+
+    }
+    button{
+        font-size: 13px;
+        height: auto;
+        min-height: 40px;
+        width: 70px;
+        padding: 10px;
+    }
+    .text{
+        width: 100%;
+    }
+  }

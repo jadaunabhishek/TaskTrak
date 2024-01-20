@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    color: white;
+    background: linear-gradient(15deg, #0f9b0f, #4574ff);
+    height: 12vh;
+}
+
+header img {
+    height: 80%;
+    width: auto;
+    padding-left: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+header img:hover {
+    transform: scale(1.1);
+}
+
+.container {
+    width: 100%;
+    min-height: 92vh;
+    padding: 10px;
+    background: linear-gradient(15deg, #0f9b0f, #4574ff);
+}
+
+.box {
+    width: 100%;
+    max-width: 540px;
+    background-color: #a1c0b9; /* Changed to white for a cleaner look */
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.box h2 {
+    display: flex;
+    color: #000000;
+    font-weight: bolder;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: x-large;
+}
+
+.box h2 img {
+    width: 30px;
+    margin-left: 12px;
+}
+
+.text {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    background-color: #8dbc8d;
+    flex: 1;
+    padding: 20px;
+    font-size: large;
+}
+
+#input-box {
+    width: 250px;
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+    font-weight: 900;
+    background-color: white;
+    color: black;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+#input-box:focus {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    border: none;
+    margin-left: 10px;
+    outline: none;
+    padding: 16px 50px;
+    background: #0f9b0f;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+    box-shadow: 2px 4px 4px 2px #000000;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #4574ff;
+    color: #fff;
+}
+
+button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+ul li:hover {
+    color: #4574ff;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    background-image: url(unchecked.png);
+    top: 12px;
+    left: 8px;
+    transition: background-image 0.3s ease-in-out;
+}
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url(checked.png);
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+ul li span:hover {
+    background: red;
+    color: #fff;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color: white;
+    background: linear-gradient(15deg, #0f9b0f, #4574ff);
+    height: 3.5vh;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+footer:hover {
+    background: #4574ff;
+    color: #fff;
+}
